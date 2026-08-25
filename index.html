@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Havenly Wellness | Santuario de Salud & Acompañamiento Integral</title>
+  <title>Havenly Wellness | Santuario de Salud, Balance & Acompañamiento Integral</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen bg-[#F7F6F2] text-[#0D1B3D] font-sans leading-relaxed selection:bg-[#D4AF37] selection:text-black">
 
-  <!-- DISCLAIMER OPCIÓN C EN HEADER -->
-  <div class="bg-[#0D1B3D] text-[#F7F6F2] border-b border-[#D4AF37]/40 py-2 px-4 text-center text-xs sm:text-sm font-semibold sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
-      <span>✓ Afiliados Oficiales de FuXion</span>
+  <!-- 1. DISCLAIMER SUPERIOR OFICIAL FUXION & DOTERRA -->
+  <div class="bg-[#0D1B3D] text-[#F7F6F2] border-b border-[#D4AF37]/40 py-2.5 px-4 text-center text-xs sm:text-sm font-semibold sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span>✓ Asesoría Nutracéutica & Aromaterapia Personalizada</span>
       <span class="text-[#D4AF37]">|</span>
-      <span>Acompañamiento Nutricional Internacional</span>
+      <span>Acompañamiento Internacional (FuXion & doTERRA)</span>
       <span class="text-[#D4AF37]">|</span>
       <a href="https://ifuxion.com/havenly" target="_blank" rel="noopener noreferrer" class="text-[#D4AF37] hover:text-white underline font-bold transition-colors">
         Ver Tienda Global &rarr;
@@ -21,100 +21,139 @@
     </div>
   </div>
 
-  <!-- LAYOUT PRINCIPAL CON SIDEBAR EN ESCRITORIO -->
+  <!-- 2. ESTRUCTURA CON SIDEBAR LATERAL ESTRATÉGICO -->
   <div class="max-w-7xl mx-auto lg:grid lg:grid-cols-12 gap-8 px-4 sm:px-6 lg:px-8 py-8">
     
-    <!-- 1. SIDEBAR LATERAL FIJO (LOGO + FILOSOFÍA VISIBLE SIEMPRE) -->
+    <!-- SIDEBAR LATERAL (VISIBILIDAD CONTINUA DE BRANDING Y REDIRECCIÓN DE PÚBLICO) -->
     <aside class="lg:col-span-4 mb-12 lg:mb-0">
       <div class="lg:sticky lg:top-16 bg-white border-2 border-[#D4AF37]/40 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
         
-        <!-- LOGO HAVENLY -->
+        <!-- LOGO OFICIAL EN CABECERA LATERAL -->
         <div class="flex flex-col items-center text-center">
-          <div class="w-20 h-20 rounded-full border-2 border-[#D4AF37] flex items-center justify-center bg-[#0D1B3D] shadow-lg shadow-[#D4AF37]/20 mb-4">
-            <svg class="w-12 h-12 text-[#D4AF37]" viewBox="0 0 24 24" fill="currentColor">
-              <circle cx="12" cy="4" r="2" />
-              <path d="M12 7c-2.5 0-4.5 1.5-5 3.5 1.5.5 3.5 1 5 1s3.5-.5 5-1c-.5-2-2.5-3.5-5-3.5z" />
-              <path d="M12 12c-3 0-6 1.5-6 4v4h12v-4c0-2.5-3-4-6-4z" />
-            </svg>
+          <div class="w-24 h-24 rounded-full border-2 border-[#D4AF37] flex items-center justify-center bg-[#0D1B3D] shadow-lg shadow-[#D4AF37]/20 mb-3 overflow-hidden p-2">
+            <!-- RUTA A TU LOGO EN GITHUB (Asegúrate de colocar tu archivo de imagen en assets/logo.png o cambiar la URL) -->
+            <img src="./assets/logo.png" alt="Havenly Logo" class="w-full h-full object-contain" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=200&q=80';" />
           </div>
           <span class="font-serif text-3xl font-extrabold tracking-widest text-[#0D1B3D]">HAVENLY</span>
-          <span class="text-[11px] tracking-[0.25em] text-[#1E3A8A] font-bold uppercase mt-1">WELLNESS · BALANCE · SANCTUARY</span>
+          <span class="text-[10px] tracking-[0.25em] text-[#1E3A8A] font-bold uppercase mt-1">WELLNESS · BALANCE · SANCTUARY</span>
         </div>
 
         <hr class="border-[#D4AF37]/30" />
 
-        <!-- FILOSOFÍA Y DECLARACIÓN DE FE -->
-        <div class="space-y-4 text-sm text-[#0D1B3D]/90">
-          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block text-center">Nuestra Filosofía</span>
+        <!-- NAVEGACIÓN Y GUÍA SEGÚN LA NECESIDAD DEL VISITANTE -->
+        <div class="space-y-4">
+          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block text-center">¿Qué estás buscando hoy?</span>
+          
+          <!-- OPCIÓN 1: FUXION -->
+          <a href="#fuxion" class="block bg-[#F7F6F2] hover:bg-[#D4AF37]/10 border border-[#D4AF37]/40 p-4 rounded-2xl transition-all group">
+            <div class="flex items-center space-x-3">
+              <span class="text-xl">🌱</span>
+              <div>
+                <strong class="text-xs uppercase text-[#0D1B3D] font-bold block group-hover:text-[#1E3A8A]">Nutrición & Bebidas FuXion</strong>
+                <span class="text-[11px] text-slate-600">Salud celular y biotecnología limpia.</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- OPCIÓN 2: DOTERRA -->
+          <a href="#doterra" class="block bg-[#F7F6F2] hover:bg-[#D4AF37]/10 border border-[#D4AF37]/40 p-4 rounded-2xl transition-all group">
+            <div class="flex items-center space-x-3">
+              <span class="text-xl">💧</span>
+              <div>
+                <strong class="text-xs uppercase text-[#0D1B3D] font-bold block group-hover:text-[#1E3A8A]">Aromaterapia & doTERRA</strong>
+                <span class="text-[11px] text-slate-600">Aceites esenciales puros CPTG®.</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- OPCIÓN 3: PEDIDO DIRECTO CON ASESORÍA -->
+          <a href="https://ifuxion.com/havenly" target="_blank" rel="noopener noreferrer" class="block bg-[#0D1B3D] text-[#F7F6F2] border border-[#D4AF37] p-4 rounded-2xl hover:bg-[#1E3A8A] transition-all group">
+            <div class="flex items-center space-x-3">
+              <span class="text-xl">📦</span>
+              <div>
+                <strong class="text-xs uppercase text-[#D4AF37] font-bold block">Envío Directo + Asesoría 1 a 1</strong>
+                <span class="text-[11px] text-slate-300">Compra garantizada hasta tu casa.</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <hr class="border-[#D4AF37]/30" />
+
+        <!-- FILOSOFÍA DE MARCA Y DESTITUCIÓN RELIGIOSA CON FE -->
+        <div class="space-y-3 text-xs text-[#0D1B3D]/90">
+          <span class="text-[10px] font-bold text-[#D4AF37] uppercase tracking-widest block text-center">Nuestra Filosofía de Servicio</span>
           
           <p class="font-light leading-relaxed">
-            La vida es un regalo sagrado y cada nuevo día representa una oportunidad divina para tomar mejores decisiones sobre nuestro templo corporal.
+            Dios nos da la vida y cada día es un regalo precioso. Entendemos que cada amanecer es una oportunidad para tomar decisiones sabias sobre nuestro cuerpo.
           </p>
 
-          <blockquote class="border-l-2 border-[#D4AF37] pl-3 italic text-xs text-[#1E3A8A] space-y-2">
-            <p>"Porque yo sé los planes que tengo para ustedes —afirma el Señor—, planes de bienestar y no de maldad, a fin de darles un futuro y una esperanza." <span class="font-sans font-bold block not-italic">— Jeremías 29:11</span></p>
-            <p>"Encomienda al Señor tus obras, y tus pensamientos serán afirmados." <span class="font-sans font-bold block not-italic">— Proverbios 16:3</span></p>
+          <blockquote class="border-l-2 border-[#D4AF37] pl-3 italic text-slate-700 space-y-2 py-1">
+            <p>"Porque yo sé los planes que tengo para ustedes —afirma el Señor—, planes de bienestar y no de maldad, a fin de darles un futuro y una esperanza." <strong class="not-italic block text-[10px] text-[#1E3A8A] font-sans">— Jeremías 29:11</strong></p>
+            <p>"Encomienda al Señor tus obras, y tus pensamientos serán afirmados." <strong class="not-italic block text-[10px] text-[#1E3A8A] font-sans">— Proverbios 16:3</strong></p>
           </blockquote>
 
-          <p class="font-light text-xs leading-relaxed">
-            Sin ser un portal religioso, honramos la voluntad divina caminando en amor y transparencia. Acompañamos tu proceso nutricional en cualquier rincón del mundo donde FuXion esté presente.
+          <p class="font-light text-[11px] leading-relaxed">
+            Confiamos plenamente en la voluntad divina de Dios (Jehová). Aunque no somos una página religiosa, honramos nuestra fe acompañando con amor a quienes se cuidan o desean generar bendición a través del sistema de emprendimiento. ¡Caminemos juntos!
           </p>
         </div>
 
         <a href="https://ifuxion.com/havenly" target="_blank" class="block w-full bg-[#D4AF37] hover:bg-[#b8952b] text-[#0D1B3D] font-extrabold text-center py-3.5 rounded-full text-xs uppercase tracking-wider shadow-lg shadow-[#D4AF37]/20 transition-all">
-          Unirme al Camino Pionero
+          Unirme al Equipo Pionero
         </a>
       </div>
     </aside>
 
-    <!-- 2. CONTENIDO PRINCIPAL -->
+    <!-- ÁREA PRINCIPAL DE CONTENIDO -->
     <main class="lg:col-span-8 space-y-12">
       
-      <!-- HERO & MANIFIESTO DE EXPERIENCIA -->
+      <!-- BLOQUE 1: PROPUESTA DE VALOR (PROBADO & COMPROBADO) -->
       <section class="bg-white border border-[#D4AF37]/30 rounded-3xl p-8 sm:p-10 shadow-lg">
-        <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block mb-2">Experiencia Comprobada & Biotecnología Ancestral</span>
+        <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block mb-2">Asesoría Nutracéutica Guiada</span>
         <h1 class="font-serif text-3xl sm:text-4xl text-[#0D1B3D] font-bold mb-6">
-          Ya lo probamos, sabemos que funciona y caminamos a tu lado
+          Ya los probamos, sabemos que funcionan y estamos aquí para acompañarte
         </h1>
         
         <p class="text-[#0D1B3D]/80 text-base sm:text-lg mb-6 leading-relaxed font-light">
-          No te enviamos a un catálogo frío a adivinar qué consumir. En Havenly probamos y verificamos personalmente cada fórmula en nuestra propia vida. Fusionamos la **sabiduría biotecnológica ancestral de la Amazonía y del mundo** (maíz morado, curcumina, maca, triptófano y principios activos puros) con asesoría personalizada continua.
+          En Havenly no te enviamos a un carrito de compras frío a adivinar qué consumir. Hemos experimentado personalmente la eficacia de los principios activos y la biotecnología limpia (Clean Label). Ya sea que compres tu plan mensual por primera vez o que ya uses los productos pero requieras un seguimiento personalizado, te acompañamos sin importar el país del mundo donde te encuentres (con presencia oficial de FuXion o doTERRA).
         </p>
 
-        <div class="bg-[#F7F6F2] p-5 rounded-2xl border border-[#D4AF37]/30 space-y-2 text-sm text-[#0D1B3D]">
-          <strong class="text-[#1E3A8A] font-bold uppercase block text-xs">🌐 ¿Dónde estás ubicado?</strong>
-          <p class="text-xs sm:text-sm">
-            Tanto si ya consumes FuXion y buscas una asesoría guiada, como si deseas iniciar tu plan mensual por primera vez, te brindamos acompañamiento nutricional personalizado en **más de 14 países de América y Europa**.
-          </p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-[#F7F6F2] p-4 rounded-2xl border border-[#D4AF37]/30">
+            <strong class="text-[#1E3A8A] font-bold uppercase block text-xs mb-1">🌿 Activos Ancestrales FuXion</strong>
+            <p class="text-xs text-slate-600">Sinergia de Maíz Morado, Cúrcuma, Jengibre, Amalaki, Cat's Claw, Yacón y Triptófano en dosis funcionales puras.</p>
+          </div>
+          <div class="bg-[#F7F6F2] p-4 rounded-2xl border border-[#D4AF37]/30">
+            <strong class="text-[#1E3A8A] font-bold uppercase block text-xs mb-1">💧 Pureza CPTG® doTERRA</strong>
+            <p class="text-xs text-slate-600">Extractos botánicos puros con certificado de grado terapéutico para el balance aromático y emocional.</p>
+          </div>
         </div>
       </section>
 
-      <!-- 3 RUTAS CON COMPONENTES ANCESTRALES -->
-      <section id="campanas" class="space-y-8">
+      <!-- BLOQUE 2: RUTAS CON FÓRMULAS ANCESTRALES -->
+      <section id="fuxion" class="space-y-8">
         <div class="border-b border-[#D4AF37]/30 pb-4">
-          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block">Formatos Probados</span>
-          <h2 class="font-serif text-2xl sm:text-3xl text-[#0D1B3D] font-bold">Rutas de Bienestar con Activos Ancestrales</h2>
+          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block">Planes Guiados FuXion</span>
+          <h2 class="font-serif text-2xl sm:text-3xl text-[#0D1B3D] font-bold">Rutas de Bienestar con Ingredientes Ancestrales</h2>
         </div>
 
         <!-- RUTA 1 -->
         <div class="bg-white border border-[#D4AF37]/30 rounded-3xl p-6 sm:p-8 shadow-lg hover:border-[#D4AF37] transition-all">
           <span class="text-xs font-bold text-[#1E3A8A] uppercase tracking-widest block mb-1">Ruta 1 • Salud Emocional & Enfoque</span>
           <h3 class="font-serif text-2xl text-[#0D1B3D] font-bold mb-3">Combo ActivaMente (ON + OFF + Vita Xtra T+)</h3>
-          
           <p class="text-sm text-[#0D1B3D]/80 mb-4">
-            🌿 <strong>Activos Ancestrales:</strong> Teína de té verde, Antocianinas de Maíz Morado andino, L-Teanina y Triptófano.
+            🌿 <strong>Botánica Ancestral:</strong> Teína de té verde, Antocianinas de Maíz Morado andino, L-Teanina y Triptófano.
           </p>
           <p class="text-xs sm:text-sm text-slate-600 mb-6">
-            El ON despeja la fatiga cerebral mientras OFF estimula la producción natural de GABA para calma profunda sin somnolencia.
+            Limpia la "basura mental" y activa neurotransmisores de paz sin causar somnolencia.
           </p>
-
           <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
             <div>
-              <span class="text-xs text-slate-500 block">Planes Mensuales / Inicio:</span>
+              <span class="text-xs text-slate-500 block">Precios Oficiales de Referencia:</span>
               <span class="font-serif text-lg text-[#0D1B3D] font-bold">Desde USD $34 (14 Días) / USD $68 (Mensual)</span>
             </div>
             <a href="https://ifuxion.com/havenly" target="_blank" class="w-full sm:w-auto bg-[#0D1B3D] text-[#D4AF37] hover:bg-[#1E3A8A] font-bold px-6 py-3 rounded-full text-xs uppercase tracking-wider text-center">
-              Solicitar Plan Guiado
+              Comprar con Asesoría
             </a>
           </div>
         </div>
@@ -123,78 +162,83 @@
         <div class="bg-white border border-[#D4AF37]/30 rounded-3xl p-6 sm:p-8 shadow-lg hover:border-[#D4AF37] transition-all">
           <span class="text-xs font-bold text-[#1E3A8A] uppercase tracking-widest block mb-1">Ruta 2 • Balance Hormonal & Tiroides</span>
           <h3 class="font-serif text-2xl text-[#0D1B3D] font-bold mb-3">Combo Balance Metabólico (Youth Elixir + Golden Flex + Alfa Balance)</h3>
-          
           <p class="text-sm text-[#0D1B3D]/80 mb-4">
-            🌿 <strong>Activos Ancestrales:</strong> Cúrcuma milenaria, Jengibre, Cardamomo, Clorofila, Espirulina y Selenio orgánico.
+            🌿 <strong>Botánica Ancestral:</strong> Cúrcuma milenaria, Jengibre, Cardamomo, Clorofila, Espirulina y Selenio.
           </p>
           <p class="text-xs sm:text-sm text-slate-600 mb-6">
-            El Selenio orgánico favorece la activación de la hormona tiroidea en sangre, mientras la Cúrcuma desinflama la glándula y articulaciones.
+            Aporte de Selenio para la conversión hormonal tiroidea y cúrcuma concentrada para desinflamar glándulas y articulaciones.
           </p>
-
           <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
             <div>
-              <span class="text-xs text-slate-500 block">Planes Mensuales / Inicio:</span>
+              <span class="text-xs text-slate-500 block">Precios Oficiales de Referencia:</span>
               <span class="font-serif text-lg text-[#0D1B3D] font-bold">Desde USD $40 (14 Días) / USD $80 (Mensual)</span>
             </div>
             <a href="https://ifuxion.com/havenly" target="_blank" class="w-full sm:w-auto bg-[#0D1B3D] text-[#D4AF37] hover:bg-[#1E3A8A] font-bold px-6 py-3 rounded-full text-xs uppercase tracking-wider text-center">
-              Solicitar Plan Guiado
-            </a>
-          </div>
-        </div>
-
-        <!-- RUTA 3 -->
-        <div class="bg-white border border-[#D4AF37]/30 rounded-3xl p-6 sm:p-8 shadow-lg hover:border-[#D4AF37] transition-all">
-          <span class="text-xs font-bold text-[#1E3A8A] uppercase tracking-widest block mb-1">Ruta 3 • Plenitud Femenina</span>
-          <h3 class="font-serif text-2xl text-[#0D1B3D] font-bold mb-3">Combo Armonía Femenina (Probal + Youth Elixir)</h3>
-          
-          <p class="text-sm text-[#0D1B3D]/80 mb-4">
-            🌿 <strong>Activos Ancestrales:</strong> Aceites esenciales de Orégano, Cedrón, Soya y Amalaki.
-          </p>
-          <p class="text-xs sm:text-sm text-slate-600 mb-6">
-            Probal equilibra fitostrógenos para aliviar bochornos, mientras Youth Elixir estimula la síntesis de colágeno durante el sueño profundo.
-          </p>
-
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
-            <div>
-              <span class="text-xs text-slate-500 block">Planes Mensuales / Inicio:</span>
-              <span class="font-serif text-lg text-[#0D1B3D] font-bold">Desde USD $27 (14 Días) / USD $53 (Mensual)</span>
-            </div>
-            <a href="https://ifuxion.com/havenly" target="_blank" class="w-full sm:w-auto bg-[#0D1B3D] text-[#D4AF37] hover:bg-[#1E3A8A] font-bold px-6 py-3 rounded-full text-xs uppercase tracking-wider text-center">
-              Solicitar Plan Guiado
+              Comprar con Asesoría
             </a>
           </div>
         </div>
       </section>
 
-      <!-- SECCIÓN DE TESTIMONIOS LUMINOSOS -->
+      <!-- BLOQUE 3: SECCIÓN DOTERRA -->
+      <section id="doterra" class="bg-white border border-[#D4AF37]/30 rounded-3xl p-8 shadow-lg">
+        <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block mb-2">Soluciones Holísticas doTERRA</span>
+        <h2 class="font-serif text-2xl text-[#0D1B3D] font-bold mb-4">Aromaterapia & Cuidado Personal con Pureza Garantizada</h2>
+        <p class="text-sm text-slate-600 mb-6">
+          Integramos la potencia de los aceites esenciales con certificación CPTG® para difusores, uso tópico e ingesta (según protocolo) para complementar tu nutrición celular.
+        </p>
+        <a href="https://ifuxion.com/havenly" target="_blank" class="inline-block bg-[#1E3A8A] text-[#F7F6F2] hover:bg-[#0D1B3D] font-bold px-6 py-3 rounded-full text-xs uppercase tracking-wider">
+          Consultar Catálogo & Guía doTERRA →
+        </a>
+      </section>
+
+      <!-- BLOQUE 4: MATERIAL EDUCATIVO Y RECURSOS DE COMUNIDAD (INSTAGRAM) -->
       <section class="bg-white border border-[#D4AF37]/30 rounded-3xl p-8 shadow-lg">
-        <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block mb-2">Comunidad & Resultados</span>
-        <h2 class="font-serif text-2xl text-[#0D1B3D] font-bold mb-6">Testimonios de Quienes Caminan Con Nosotros</h2>
-        
-        <div class="grid sm:grid-cols-2 gap-6">
-          <div class="bg-[#F7F6F2] p-6 rounded-2xl border border-slate-200">
-            <div class="text-[#D4AF37] text-lg mb-2">★★★★★</div>
-            <p class="italic text-xs sm:text-sm text-slate-700 mb-4 font-serif">
-              "No solo compré mi combo para el estrés, sino que el acompañamiento paso a paso me enseñó a tomarlo en las horas exactas. El cambio fue total."
-            </p>
-            <strong class="text-xs text-[#0D1B3D] block font-bold">María G. — Bogotá</strong>
-          </div>
+        <div class="border-b border-[#D4AF37]/30 pb-4 mb-6">
+          <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-widest block">Recursos de Capacitación</span>
+          <h2 class="font-serif text-2xl text-[#0D1B3D] font-bold">Material Oficial para Afiliados & Clientes</h2>
+          <p class="text-xs text-slate-600 mt-1">Videos explicativos, guías de combinación y material oficial de FuXion & doTERRA preparado para el equipo.</p>
+        </div>
 
-          <div class="bg-[#F7F6F2] p-6 rounded-2xl border border-slate-200">
-            <div class="text-[#D4AF37] text-lg mb-2">★★★★★</div>
-            <p class="italic text-xs sm:text-sm text-slate-700 mb-4 font-serif">
-              "Saber que el sistema de ventas y recomendación también genera bendición financiera me motivó a unirme al equipo. No caminamos solos."
+        <!-- TARJETA PROPIA HAVENLY INTEGRANDO REEL / RECURSO DE INSTAGRAM -->
+        <div class="bg-[#F7F6F2] border border-[#D4AF37]/40 rounded-3xl p-6 flex flex-col sm:flex-row items-center gap-6">
+          <div class="w-full sm:w-1/2">
+            <!-- REPRODUCTOR OFICIAL DE INSTAGRAM ENMARCADO EN MARCA -->
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Dcd4EsDFIln/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:16px; margin: 0 auto; max-width:100%; min-width:260px; padding:0; width:100%;"></blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+          <div class="w-full sm:w-1/2 space-y-4">
+            <span class="bg-[#1E3A8A] text-[#D4AF37] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Verificado por Havenly</span>
+            <h3 class="font-serif text-xl font-bold text-[#0D1B3D]">Guía Visual de Sinergia Nutracéutica</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Explicación gráfica sobre cómo combinar tus bebidas funcionales durante el día para maximizar la absorción biológica de los nutrientes.
             </p>
-            <strong class="text-xs text-[#0D1B3D] block font-bold">Carlos M. — Medellín</strong>
+            <a href="https://ifuxion.com/havenly" target="_blank" class="block text-center bg-[#0D1B3D] text-[#D4AF37] hover:bg-[#1E3A8A] font-bold py-3 px-4 rounded-full text-xs uppercase tracking-wider transition-all">
+              Usar Material como Afiliado →
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- FOOTER DEL CONTENIDO -->
-      <footer class="text-center py-6 text-xs text-slate-500 space-y-2">
-        <p class="font-serif font-bold text-[#0D1B3D] text-sm">HAVENLY WELLNESS</p>
-        <p>Acompañamiento nutricional independiente afiliado a FuXion.</p>
-        <p>&copy; 2026 Havenly. Todos los derechos reservados.</p>
+      <!-- FOOTER COMPLETO CON LOGO VISIBLE EN PIE DE PÁGINA -->
+      <footer class="border-t border-[#D4AF37]/30 bg-white rounded-3xl p-8 text-center space-y-4 shadow-md">
+        <!-- LOGO OFICIAL PIE DE PÁGINA -->
+        <div class="flex justify-center">
+          <div class="w-16 h-16 rounded-full border border-[#D4AF37] flex items-center justify-center bg-[#0D1B3D] overflow-hidden p-1.5 shadow-md">
+            <img src="./assets/logo.png" alt="Havenly Logo Footer" class="w-full h-full object-contain" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=200&q=80';" />
+          </div>
+        </div>
+        
+        <div>
+          <p class="font-serif font-extrabold text-[#0D1B3D] text-lg tracking-wider">HAVENLY WELLNESS</p>
+          <p class="text-xs text-[#1E3A8A] uppercase tracking-widest font-bold">Salud · Balance · Sanctuary</p>
+        </div>
+
+        <p class="text-slate-500 text-xs max-w-lg mx-auto leading-relaxed">
+          Un santuario para el cuerpo, la mente y el espíritu. Marca de asesoría nutracéutica independiente afiliada a FuXion y doTERRA.
+        </p>
+
+        <p class="text-slate-400 text-[11px]">&copy; 2026 Havenly. Todos los derechos reservados.</p>
       </footer>
 
     </main>
